@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<widget id="com.app.rgvmariachi" version="0.0.5" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+  <name>BookMyDoc</name>
+  <description>
+        BookMyDoc
+    </description>
+  <author email="info@techware.co.in" href="http://techware.co.in">
+      Techware Solution
+    </author>
+  <content src="index.html"/>
+  <access origin="*"/>
+  <preference name="AutoHideSplashScreen" value="false"/>
+  <preference name="SplashScreenDelay" value="10000"/>
+  <preference name="SplashScreen" value="screen"/>
+  <gap:plugin name="cordova-plugin-splashscreen" source="npm"/>
+  
+  
+   <feature name="StatusBar">
+    <param name="ios-package" value="CDVStatusBar" onload="true"/>
+  </feature>
+  
+  <icon src="icon.png"/>
+  
+  <icon src="res/icon/android/icon-36-ldpi.png" gap:platform="android" gap:qualifier="ldpi" />
+  <icon src="resources/icon/android/icon-48-mdpi.png" gap:platform="android" gap:qualifier="mdpi" />
+  <icon src="resources/icon/android/icon-72-hdpi.png" gap:platform="android" gap:qualifier="hdpi" />
+  <icon src="resources/icon/android/icon-96-xhdpi.png" gap:platform="android" gap:qualifier="xhdpi" />
+  
+  <icon src="resources/icon/ios/icon-60.png" gap:platform="ios" width="60" height="60"/>
+  <icon src="resources/icon/ios/icon-60-2x.png" gap:platform="ios" width="120" height="120"/>
+  <icon src="resources/icon/ios/icon-76.png" gap:platform="ios" width="76" height="76"/>
+  <icon src="resources/icon/ios/icon-76-2x.png" gap:platform="ios" width="152" height="152"/>
+  <icon src="resources/icon/ios/icon-small.png" gap:platform="ios" width="29" height="29"/>
+  <icon src="resources/icon/ios/icon-small-2x.png" gap:platform="ios" width="58" height="58"/>
+  <icon src="resources/icon/ios/icon-40.png" gap:platform="ios" width="40" height="40"/>
+  <icon src="resources/icon/ios/icon-40-2x.png" gap:platform="ios" width="80" height="80"/>
+  <icon src="resources/icon/ios/icon.png" gap:platform="ios" width="57" height="57"/>
+  <icon src="resources/icon/ios/icon-2x.png" gap:platform="ios" width="114" height="114"/>
+  <icon src="resources/icon/ios/icon-72.png" gap:platform="ios" width="72" height="72"/>
+  <icon src="resources/icon/ios/icon-72-2x.png" gap:platform="ios" width="144" height="144"/>
+  <icon src="resources/icon/ios/icon-50.png" gap:platform="ios" width="50" height="50"/>
+  <icon src="resources/icon/ios/icon-50-2x.png" gap:platform="ios" width="100" height="100"/>
+  
+  <gap:splash src="splash.png"/>
+  
+  <gap:splash src="resources/screen/android/screen-ldpi-portrait.png" gap:platform="android" gap:qualifier="port-ldpi" />
+  <gap:splash src="resources/screen/android/screen-mdpi-portrait.png" gap:platform="android" gap:qualifier="port-mdpi" />
+  <gap:splash src="resources/screen/android/screen-hdpi-portrait.png" gap:platform="android" gap:qualifier="port-hdpi" />
+  <gap:splash src="resources/screen/android/screen-xhdpi-portrait.png" gap:platform="android" gap:qualifier="port-xhdpi" />
+  
+  <gap:splash src="resources/screen/ios/screen-iphone-portrait.png" gap:platform="ios" width="320" height="480"/>
+  <gap:splash src="resources/screen/ios/screen-iphone-portrait-2x.png" gap:platform="ios" width="640" height="960"/>
+  <gap:splash src="resources/screen/ios/screen-iphone-portrait-568h-2x.png" gap:platform="ios" width="640" height="1136"/>
+  <gap:splash src="resources/screen/ios/screen-ipad-portrait.png" gap:platform="ios" width="768" height="1024"/>
+  <gap:splash src="resources/screen/ios/default-portrait-2x.png" gap:platform="ios" width="1536" height="2048"/>
+
+  <!-- <gap:plugin name="org.apache.cordova.network-information" spec="0.2.15" source="pgb" /> -->
+  <gap:plugin name="cordova-plugin-network-information" source="npm"/>
+  <gap:plugin name="cordova-plugin-inappbrowser" source="npm"/>
+  <gap:plugin name="cordova-plugin-ionic-keyboard" source="npm"/>
+  <gap:plugin name="cordova-plugin-geolocation" source="npm"/>
+  <gap:plugin name="cordova-plugin-whitelist" source="npm"/>
+  <feature name="StatusBar">
+    <param name="ios-package" value="CDVStatusBar" onload="true"/>
+  </feature>
+  <allow-intent href="http://*/*"/>
+  <allow-intent href="https://*/*"/>
+  <allow-intent href="tel:*"/>
+  <allow-intent href="sms:*"/>
+  <allow-intent href="mailto:*"/>
+  <allow-intent href="geo:*"/>
+  <platform name="android">
+    <allow-intent href="market:*"/>
+    <icon src="resources\android\icon\drawable-ldpi-icon.png" density="ldpi"/>
+    <icon src="resources\android\icon\drawable-mdpi-icon.png" density="mdpi"/>
+    <icon src="resources\android\icon\drawable-hdpi-icon.png" density="hdpi"/>
+    <icon src="resources\android\icon\drawable-xhdpi-icon.png" density="xhdpi"/>
+    <icon src="resources\android\icon\drawable-xxhdpi-icon.png" density="xxhdpi"/>
+    <icon src="resources\android\icon\drawable-xxxhdpi-icon.png" density="xxxhdpi"/>
+    <splash src="resources\android\splash\drawable-land-ldpi-screen.png" density="land-ldpi"/>
+    <splash src="resources\android\splash\drawable-land-mdpi-screen.png" density="land-mdpi"/>
+    <splash src="resources\android\splash\drawable-port-ldpi-screen.png" density="port-ldpi"/>
+    <splash src="resources\android\splash\drawable-port-mdpi-screen.png" density="port-mdpi"/>
+    <splash src="resources\android\splash\drawable-port-hdpi-screen.png" density="port-hdpi"/>
+    <splash src="resources\android\splash\drawable-port-xhdpi-screen.png" density="port-xhdpi"/>
+  </platform>
+  <platform name="ios">
+    <allow-intent href="itms:*"/>
+    <allow-intent href="itms-apps:*"/>
+  </platform>
+  <icon src="resources\android\icon\drawable-xhdpi-icon.png"/>
+</widget>

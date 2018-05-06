@@ -1,0 +1,14 @@
+  <ion-header-bar class="bar-stableb bg-color-white">
+    <button class="common-button button button-positive button-clear button_text ion-chevron-left txt-color-black"></button>
+    <div class=" title title-center header-item bmd-spclity-head">Selecione a modalidade</div>
+    <button class="right-buttons"><i class="ion-ios-refresh-outline"></i></button>
+  </ion-header-bar>
+  <ion-view >
+<ion-content class="bmd-spcl-theme">
+  <div class="bmd-spcl-list" > 
+	<div class="main_slide" ng-class="transitionClass" data-ng-view data-ng-animate="transitionClass"></div>
+		<button ng-click="slide('slidein-from-left')">Anterior</button>
+		<button ng-click="slide('slidein-from-right')">Próximo</button>
+	</div>
+</ion-content>
+</ion-view>
